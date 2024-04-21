@@ -78,6 +78,7 @@ This project supports creating virtual browsers (using https://github.com/m1k1o/
 
 ## Tech
 
+- Love
 - React
 - TypeScript
 - Node.js
