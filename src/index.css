@@ -2,11 +2,13 @@ html body {
   margin: 0;
   /* fix for scrollbar popping in and out at certain widths, but adds a permanent scrollbar */
   overflow-y: scroll;
-  background-color: #222222;
+  /* background-color: #28e972bd; */
+  /* background-color: rgb(161, 208, 240); */
+  background-image: linear-gradient(to left, #f3eaea, rgb(241, 186, 65));
 }
 
 ::-webkit-scrollbar-corner {
-  background: rgba(0, 0, 0, 0);
+  background: rgba(247, 17, 17, 0);
 }
 
 /* If a style is used outside of App, put it here */
@@ -14,7 +16,7 @@ button.linkButton {
   background: none !important;
   border: none;
   padding: 0 !important;
-  color: #069;
+  color: rgb(0, 0, 0);
   text-decoration: underline;
   cursor: pointer;
   /* make the font match the rest of the text */
@@ -33,13 +35,14 @@ button.linkButton {
 
 .smallText {
   font-size: 12px;
+  /* background-color: aquamarine; */
 }
 
 .sectionHeader {
   font-size: 14px;
   text-transform: uppercase;
   font-weight: bolder;
-  color: gray;
+  color: rgb(0, 0, 0);
   margin-top: 8px;
 }
 
@@ -77,7 +80,7 @@ button.linkButton {
 }
 
 .ui.inverted.menu .active.item {
-  border-bottom: 2px solid #2185d0;
+  border-bottom: 2px solid #000000;
   background: inherit;
   margin-bottom: -2px;
 }

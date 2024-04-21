@@ -29,8 +29,8 @@ export const ScreenShareModal = ({
             <Table.Header>
               <Table.Row>
                 <Table.HeaderCell />
-                <Table.HeaderCell>WatchParty Free</Table.HeaderCell>
-                <Table.HeaderCell>WatchParty Plus</Table.HeaderCell>
+                <Table.HeaderCell>Cat Watch Party</Table.HeaderCell>
+                {/* <Table.HeaderCell>WatchParty Plus</Table.HeaderCell> */}
               </Table.Row>
             </Table.Header>
 
@@ -40,26 +40,26 @@ export const ScreenShareModal = ({
                 <Table.Cell>
                   Stream your video to each viewer individually.
                 </Table.Cell>
-                <Table.Cell>
+                {/* <Table.Cell>
                   Our relay server streams to viewers for you.
                   <br />
                   Higher quality and lower bandwidth usage.
-                </Table.Cell>
+                </Table.Cell> */}
               </Table.Row>
               <Table.Row>
                 <Table.Cell>Latency</Table.Cell>
                 <Table.Cell>{`< 1s`}</Table.Cell>
-                <Table.Cell>{`< 1s`}</Table.Cell>
+                {/* <Table.Cell>{`< 1s`}</Table.Cell> */}
               </Table.Row>
               <Table.Row>
                 <Table.Cell>Recommended Max Viewers</Table.Cell>
                 <Table.Cell>5</Table.Cell>
-                <Table.Cell>20</Table.Cell>
+                {/* <Table.Cell>20</Table.Cell> */}
               </Table.Row>
               <Table.Row>
                 <Table.Cell>Recommended Upload Speed</Table.Cell>
                 <Table.Cell>5 Mbps per viewer</Table.Cell>
-                <Table.Cell>5 Mbps</Table.Cell>
+                {/* <Table.Cell>5 Mbps</Table.Cell> */}
               </Table.Row>
               <Table.Row>
                 <Table.Cell></Table.Cell>

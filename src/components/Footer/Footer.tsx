@@ -8,22 +8,7 @@ export const Footer = () => (
       paddingBottom: '1em',
       fontSize: '18px',
       color: 'white',
+      // text-align:center,
     }}
-  >
-    <Link style={{ color: 'white' }} to="/terms">
-      Terms
-    </Link>
-    {' · '}
-    <Link style={{ color: 'white' }} to="/privacy">
-      Privacy
-    </Link>
-    {' · '}
-    <Link style={{ color: 'white' }} to="/faq">
-      FAQ
-    </Link>
-    {' · '}
-    <Link style={{ color: 'white' }} to="/discordBot">
-      Discord Bot
-    </Link>
-  </div>
+  ><center>Here It Ends My Love ❤</center> </div>
 );

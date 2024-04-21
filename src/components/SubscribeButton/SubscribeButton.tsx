@@ -10,29 +10,7 @@ export const SubscribeButton = () => {
   if (isSubscriber) {
     return null;
   }
-  return (
-    <>
-      {isSubscribeModalOpen && (
-        <SubscribeModal closeSubscribe={() => setIsSubscribeModalOpen(false)} />
-      )}
-      <Popup
-        content="Subscribe to help support us and enable additional features!"
-        trigger={
-          <Button
-            fluid
-            color="orange"
-            className="toolButton"
-            icon
-            labelPosition="left"
-            onClick={() => setIsSubscribeModalOpen(true)}
-          >
-            <Icon name="plus" />
-            Subscribe
-          </Button>
-        }
-      />
-    </>
-  );
+ 
 };
 
 export const ManageSubButton = ({}: {}) => {
@@ -53,17 +31,5 @@ export const ManageSubButton = ({}: {}) => {
     console.log(session);
     window.location.assign(session.url);
   }, [user]);
-  return (
-    <Button
-      fluid
-      color="orange"
-      className="toolButton"
-      icon
-      labelPosition="left"
-      onClick={onManage}
-    >
-      <Icon name="wrench" />
-      Manage Subscription
-    </Button>
-  );
+ 
 };

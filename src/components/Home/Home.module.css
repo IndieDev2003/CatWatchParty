@@ -1,24 +1,30 @@
 .container {
   display: flex;
   flex-direction: column;
-  color: white;
-  /* background-image: linear-gradient(to bottom, #222222, #008cdd); */
+  color: rgba(251, 253, 248, 0.932);
+  background-image: linear-gradient(to bottom, #222222, #008cdd);
 }
 
 .hero {
-  color: white;
+  color: rgb(19, 17, 17);
   width: 100%;
-  background-image: linear-gradient(to bottom, #222222, #006199);
-  border-bottom-left-radius: 0%;
-  border-bottom-right-radius: 50%;
+  /* background-image: linear-gradient(to bottom, #f57018, #fcc204); */
+  border-bottom-right-radius: 25%;
+  border-top-left-radius: 25%;
+  /* border-bottom-left-radius: 25%; */
   display: flex;
   justify-content: center;
+  background-image: url(https://t4.ftcdn.net/jpg/00/97/58/97/360_F_97589769_t45CqXyzjz0KXwoBZT9PRaWGHRk5hQqQ.jpg) ;
+  background-size: contain ;
 }
 
 .hero.green {
-  background-image: linear-gradient(to bottom, #222222, rgb(21, 114, 43));
-  border-bottom-left-radius: 50%;
-  border-bottom-right-radius: 0%;
+  background-image: linear-gradient(to right, #f3eaea, rgb(241, 186, 65));
+  /* background-image: url(https://cdn.pixabay.com/photo/2024/02/28/07/42/european-shorthair-8601492_1280.jpg); */
+  background-size: contain;
+  border-top-left-radius: 30%;
+  border-bottom-left-radius: 0%;
+  border-bottom-right-radius: 30%;
 }
 
 .heroInner {
@@ -41,7 +47,7 @@
 }
 
 .subText {
-  color: lightgray;
+  color: rgb(0, 0, 0);
   font-size: 20px;
   line-height: 1.5em;
   margin-top: 8px;
@@ -61,6 +67,7 @@
 }
 
 .featureText {
-  color: lightgray;
+  color: rgb(255, 255, 255);
   font-size: 14px;
+  text-align: center;
 }

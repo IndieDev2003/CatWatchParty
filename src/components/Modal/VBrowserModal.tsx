@@ -111,66 +111,35 @@ export class VBrowserModal extends React.Component<{
                 <Table.Header>
                   <Table.Row>
                     <Table.HeaderCell />
-                    <Table.HeaderCell>WatchParty Free</Table.HeaderCell>
-                    <Table.HeaderCell>WatchParty Plus</Table.HeaderCell>
+                    <Table.HeaderCell>Cat Watch Party</Table.HeaderCell>
+                    
                   </Table.Row>
                 </Table.Header>
 
                 <Table.Body>
                   <Table.Row>
                     <Table.Cell>VBrowser Max Resolution</Table.Cell>
-                    <Table.Cell>720p</Table.Cell>
                     <Table.Cell>1080p</Table.Cell>
+                    
                   </Table.Row>
                   <Table.Row>
                     <Table.Cell>VBrowser CPU/RAM</Table.Cell>
                     <Table.Cell>Standard</Table.Cell>
-                    <Table.Cell>Extra</Table.Cell>
+                    
                   </Table.Row>
                   <Table.Row>
                     <Table.Cell>VBrowser Session Length</Table.Cell>
                     <Table.Cell>3 hours</Table.Cell>
-                    <Table.Cell>24 hours</Table.Cell>
+                    
                   </Table.Row>
                   <Table.Row>
                     <Table.Cell>Recommended Max Viewers</Table.Cell>
                     <Table.Cell>15</Table.Cell>
-                    <Table.Cell>30</Table.Cell>
+                    
                   </Table.Row>
                   <Table.Row>
                     <Table.Cell>Region</Table.Cell>
                     <Table.Cell>Where available </Table.Cell>
-                    <Table.Cell>
-                      <Dropdown
-                        selection
-                        onChange={(e, { value }) =>
-                          this.setState({ region: value })
-                        }
-                        value={this.state.region}
-                        options={regionOptions}
-                      ></Dropdown>
-                    </Table.Cell>
-                  </Table.Row>
-                  <Table.Row>
-                    <Table.Cell></Table.Cell>
-                    <Table.Cell>
-                      {canLaunch ? (
-                        this.state.isFreePoolFull ? (
-                          vmPoolFullMessage
-                        ) : (
-                          <LaunchButton large={false} />
-                        )
-                      ) : (
-                        <SignInButton fluid />
-                      )}
-                    </Table.Cell>
-                    <Table.Cell>
-                      {this.context.isSubscriber ? (
-                        <LaunchButton large />
-                      ) : (
-                        subscribeButton
-                      )}
-                    </Table.Cell>
                   </Table.Row>
                 </Table.Body>
               </Table>

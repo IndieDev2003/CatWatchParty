@@ -19,7 +19,7 @@ export const Home = () => {
               <NewRoomButton size="huge" />
             </div>
           }
-          image={'/screenshot4.png'}
+          image={'/screenshot4.jpg'}
         />
         <Divider horizontal>
           <Header inverted as="h4">
@@ -52,7 +52,7 @@ export const Home = () => {
         <Hero
           heroText={'React to moments together.'}
           subText={"Find moments of shared joy even when you're apart."}
-          image={'/screenshot18.png'}
+          image={'/screenshot-3.webp'}
           color="green"
         />
         <Divider horizontal>
@@ -93,7 +93,7 @@ export const Home = () => {
           subText={
             'Bring video and chat front-and-center for minimal distractions.'
           }
-          image={'/screenshot14.png'}
+          image={'/screenshot5.jpg'}
         />
         <Divider horizontal />
         <div
@@ -140,7 +140,11 @@ export const Home = () => {
               </Step>
             </Step.Group>
           </div>
-          <div style={{ width: '160px' }}>
+          <div style={{ width: '160px',
+            backgroundColor:'red',
+            borderRadius:"20px",
+            // color:'#f3eaea',
+           }}>
             <NewRoomButton />
           </div>
         </div>

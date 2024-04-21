@@ -14,7 +14,7 @@ import { LoginModal } from '../Modal/LoginModal';
 import axios from 'axios';
 import { SubscribeButton } from '../SubscribeButton/SubscribeButton';
 import { ProfileModal } from '../Modal/ProfileModal';
-import Announce from '../Announce/Announce';
+// import Announce from '../Announce/Announce';
 import { InviteButton } from '../InviteButton/InviteButton';
 import appStyles from '../App/App.module.css';
 import { MetadataContext } from '../../MetadataContext';
@@ -61,8 +61,9 @@ export class NewRoomButton extends React.Component<{
         content="Create a new room with a random URL that you can share with friends"
         trigger={
           <Button
-            color="blue"
+            color="orange"
             size={this.props.size}
+            // border-radius= '50%'
             icon
             labelPosition="left"
             onClick={this.createRoom}
@@ -93,21 +94,7 @@ export class SignInButton extends React.Component<SignInButtonProps> {
     }
   }
 
-  facebookSignIn = async () => {
-    const provider = new firebase.auth.FacebookAuthProvider();
-    await firebase.auth().signInWithPopup(provider);
-  };
 
-  googleSignIn = async () => {
-    const provider = new firebase.auth.GoogleAuthProvider();
-    await firebase.auth().signInWithPopup(provider);
-  };
-
-  signOut = () => {
-    firebase.auth().signOut();
-    window.location.reload();
-    this.setState({ userImage: null });
-  };
 
   render() {
     if (this.context.user) {
@@ -134,47 +121,7 @@ export class SignInButton extends React.Component<SignInButtonProps> {
         </div>
       );
     }
-    return (
-      <React.Fragment>
-        {this.state.isLoginOpen && (
-          <LoginModal
-            closeModal={() => this.setState({ isLoginOpen: false })}
-          />
-        )}
-        <Popup
-          basic
-          content="Sign in for additional features"
-          trigger={
-            <Dropdown
-              style={{ height: '36px' }}
-              icon="sign in"
-              labeled
-              className="icon"
-              button
-              text="Sign in"
-              fluid={this.props.fluid}
-            >
-              <Dropdown.Menu>
-                <Dropdown.Item onClick={this.facebookSignIn}>
-                  <Icon name="facebook" />
-                  Facebook
-                </Dropdown.Item>
-                <Dropdown.Item onClick={this.googleSignIn}>
-                  <Icon name="google" />
-                  Google
-                </Dropdown.Item>
-                <Dropdown.Item
-                  onClick={() => this.setState({ isLoginOpen: true })}
-                >
-                  <Icon name="mail" />
-                  Email
-                </Dropdown.Item>
-              </Dropdown.Menu>
-            </Dropdown>
-          }
-        />
-      </React.Fragment>
-    );
+    
   }
 }
 
@@ -301,27 +248,27 @@ export class TopBar extends React.Component<{
             >
               <Icon
                 inverted
-                name="film"
+                name="paw"
                 size="large"
                 style={{
-                  position: 'absolute',
-                  top: 8,
+                  position: 'relative',
+                  top: 14,
                   width: '100%',
                   margin: '0 auto',
                 }}
               />
-              <Icon
+              {/* <Icon
                 inverted
-                name="group"
+                name="cog"
                 size="large"
-                color="green"
+                color="transparent"
                 style={{
                   position: 'absolute',
                   bottom: 8,
                   width: '100%',
                   margin: '0 auto',
                 }}
-              />
+              /> */}
             </div>
           </a>
           {this.props.roomTitle || this.props.roomDescription ? (
@@ -337,14 +284,14 @@ export class TopBar extends React.Component<{
               <div
                 style={{
                   fontSize: 30,
-                  color: this.props.roomTitleColor || 'white',
+                  color: this.props.roomTitleColor || 'black',
                   fontWeight: 'bold',
                   letterSpacing: 1,
                 }}
               >
                 {this.props.roomTitle?.toUpperCase()}
               </div>
-              <div style={{ marginTop: 4, color: 'rgb(255 255 255 / 63%)' }}>
+              <div style={{ marginTop: 4, color: 'rgb(265 255 255 / 23%)' }}>
                 {this.props.roomDescription}
               </div>
             </div>
@@ -355,13 +302,26 @@ export class TopBar extends React.Component<{
                   style={{
                     display: 'flex',
                     alignItems: 'center',
+                    justifyContent:'space-between'
                   }}
                 >
+                  {/* Cat */}
                   <div
                     style={{
                       textTransform: 'uppercase',
                       fontWeight: 700,
                       color: '#2185d0',
+                      fontSize: '30px',
+                      lineHeight: '30px',
+                    }}
+                  >
+                    Cat
+                  </div>
+                  <div
+                    style={{
+                      textTransform: 'uppercase',
+                      fontWeight: 700,
+                      color: 'white',
                       fontSize: '30px',
                       lineHeight: '30px',
                     }}
@@ -391,26 +351,10 @@ export class TopBar extends React.Component<{
               alignItems: 'center',
             }}
           >
-            <a
-              href="https://discord.gg/3rYj5HV"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="footerIcon"
-              title="Discord"
-            >
-              <Icon name="discord" size="big" link />
-            </a>
-            <a
-              href="https://github.com/howardchung/watchparty"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="footerIcon"
-              title="GitHub"
-            >
-              <Icon name="github" size="big" link />
-            </a>
+          
+            
           </div>
-          <Announce />
+          {/* <Announce /> */}
           <div
             className={appStyles.mobileStack}
             style={{
