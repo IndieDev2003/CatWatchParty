@@ -2,7 +2,7 @@
 
 <!-- ![screenshot](https://github.com/IndieDev2003/CatWatchParty/main/images/main.png) -->
 
-An website for watching videos together.
+An website for watching videos together with your Ones just like me ❤.
 
 ## Description
 
