@@ -1,4 +1,4 @@
-# WatchParty
+# Cat Watch Party
 
 ![screenshot](https://github.com/IndieDev2003/CatWatchParty/raw/main/images/main.png)
 
@@ -24,7 +24,7 @@ An website for watching videos together with your Ones just like me ❤.
 
 ## Quick Start
 
-- Clone this repo via `git clone git@github.com:howardchung/watchparty.git`
+- Clone this repo via `git clone https://github.com/IndieDev2003/CatWatchParty.git`
 - Install npm dependencies for the project via `npm install`
 - Start the server via `npm run dev`
   - Defaults to port 8080, customize with `PORT` env var
