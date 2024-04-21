@@ -1,6 +1,6 @@
 # WatchParty
 
-![screenshot](https://github.com/IndieDev2003/CatWatchParty/tree/main/images/main.png)
+![screenshot](https://github.com/IndieDev2003/CatWatchParty/main/images/main.png)
 
 An website for watching videos together.
 
