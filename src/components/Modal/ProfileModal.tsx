@@ -193,7 +193,7 @@ export class ProfileModal extends React.Component<{
               <Icon name="check circle" />
               Verify Email
             </Button>
-            {this.context.isSubscriber && <ManageSubButton />}
+            {this.context.isSubscriber}
             {this.state.linkedDiscord ? (
               <Button
                 icon
