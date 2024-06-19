@@ -39,7 +39,7 @@
     "recharts": "^2.10.4",
     "semantic-ui-css": "^2.5.0",
     "semantic-ui-react": "^2.1.5",
-    "socket.io": "^4.6.1",
+    "socket.io": "^4.6.2",
     "socket.io-client": "^4.6.1",
     "srt-webvtt": "^2.0.0",
     "stripe": "^8.222.0",
